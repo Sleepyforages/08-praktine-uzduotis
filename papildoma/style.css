@@ -1,0 +1,185 @@
+html {
+    max-width: 1920px;
+    font-size: 16px;
+}
+
+body {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: #657AD3 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-row {
+    margin-top: 18.625rem;
+    height: 30.25rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 17.6875rem;
+}
+
+.leftblock {
+    margin-top: 1.875rem;
+    width: 20rem;
+    /* height: 26.5rem; */
+    background: transparent url('img/Rectangle 2.png') 10% 50% no-repeat padding-box;
+    opacity: 1;
+    margin-bottom: 1.875rem;
+}
+
+.rightblock {
+    width: 30rem;
+    /* height: 30.25rem; */
+    /* background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box; */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.signup {
+    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+    text-align: left;
+    font-size: 2rem;
+    line-height: 2.3125rem;
+    letter-spacing: 0px;
+    color: #FFFFFF !important;
+    opacity: 1;
+}
+
+.terms {
+    margin-top: 19.4375rem;
+    margin-left: 2.5rem;
+    text-align: left;
+    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+    font-size: 1rem;
+    line-height: 1.875rem;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.terms a {
+    color: #FFFFFF !important;
+}
+
+.leftformpcolumn,
+.rightfolumcolumn {
+    width: 3.75rem;
+}
+
+.formcolumn {
+    width: 22.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.form {
+    padding-top: 2rem;
+}
+
+label {
+    display: block;
+    font: normal normal normal 0.8125rem/0.9375rem Gill Sans MT;
+    color: #000000;
+    padding-top: 2.1rem;
+    padding-bottom: 0.75rem;
+    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+    text-align: left;
+    opacity: 1;
+}
+
+input {
+    display: block;
+    border: none;
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 0.3rem;
+    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+    border-bottom: 1px solid #808080;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #808080;
+}
+
+::-webkit-input-placeholder {
+    font: normal normal normal 1.125rem/1.25rem Gill Sans MT;
+    color: #A9A9A9;
+}
+
+.formbottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2.214375rem;
+    align-items: center;
+}
+
+.button {
+    font: normal normal normal 1.125rem/1.25rem Gill Sans MT;
+    color: #FFFFFF;
+    background-color: #FFC0CB;
+    border-radius: 1.25rem;
+    padding-left: 3.25rem;
+    padding-right: 3.25rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    border: none;
+    box-shadow: 0 0.25rem 0.5rem darkgray;
+}
+
+.button:hover {
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.5rem grey;
+}
+
+.signin {
+    margin-left: 0.875rem;
+    font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.signin a {
+    margin-left: 0.375rem;
+    color: #00008B;
+}
+
+@media screen and (max-width:825px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:720px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    html {
+        font-size: 10px;
+    }
+}
