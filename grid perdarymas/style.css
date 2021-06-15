@@ -3,13 +3,81 @@ html {
     font-size: 18px;
 }
 
-* {
-    box-sizing: border-box;
+.header {
+    grid-area: header;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: stretch center;
+    align-self: stretch center;
+    padding: 30px;
+    text-align: center;
+    background: white;
+}
+
+.topnav {
+    grid-area: meniu;
+    grid-column-start: 1;
+    grid-column-end: span 12;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: stretch center;
+    align-self: stretch center;
+}
+
+.main {
+    grid-area: main;
+    grid-column-start: 1;
+    grid-column-end: span 12;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    justify-self: stretch center;
+    align-self: stretch center;
+}
+
+.leftbar {
+    grid-area: main;
+    grid-column-start: 1;
+    grid-column-end: span 9;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: stretch center;
+    align-self: stretch center;
+    padding-right: 2%;
+}
+
+.rightbar {
+    grid-area: main;
+    grid-column-start: 10;
+    grid-column-end: span 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: stretch center;
+    align-self: center stretch;
+}
+
+.followme {
+    grid-area: followme;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    justify-self: stretch center;
+    align-self: stretch center;
 }
 
 .container {
     margin: auto;
     display: grid;
+    grid-template-columns: repeat(12, 1fr);
 }
 
 body {
@@ -25,12 +93,6 @@ img {
 
 
 /* Header/Blog Title */
-
-.header {
-    padding: 30px;
-    text-align: center;
-    background: white;
-}
 
 .header h1 {
     font-size: 5rem;
@@ -108,9 +170,14 @@ p {
 
 .fakeimg {
     background-color: #aaa;
-    width: 100%;
     padding: 20px;
     font-size: 0.8rem !important;
+}
+
+.fakeimg-top {
+    background-color: #aaa;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    font-size: 0.6rem !important;
 }
 
 
@@ -120,6 +187,13 @@ p {
     background-color: white;
     padding: 20px;
     margin-top: 20px;
+}
+
+.card-top {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    grid-row: 3 / 5;
 }
 
 
